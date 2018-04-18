@@ -1,6 +1,6 @@
 /* 	dynArray.h : Dynamic Array implementation. */
 #ifndef DYNAMIC_ARRAY_INCLUDED
-#define DYNAMIC_ARRAY_INCLUDED 
+#define DYNAMIC_ARRAY_INCLUDED
 
 #ifndef __TYPE
 #define __TYPE
@@ -27,7 +27,7 @@ typedef struct DynArr DynArr;
 
 
 /* Dynamic Array Functions */
-void initDynArr(DynArr *v, int capacity);	
+void initDynArr(DynArr *v, int capacity);
 DynArr *newDynArr(int cap);
 void freeDynArr(DynArr *v);
 void deleteDynArr(DynArr *v);
@@ -44,12 +44,13 @@ int isEmptyDynArr(DynArr *v);
 void pushDynArr(DynArr *v, TYPE val);
 TYPE topDynArr(DynArr *v);
 void popDynArr(DynArr *v);
+int IsComplement(char a, char b);
 
-/* Bag Interface */	
+/* Bag Interface */
 int containsDynArr(DynArr *v, TYPE val);
 void removeDynArr(DynArr *v, TYPE val);
 
-/* Bag2Set Interface */	
+/* Bag2Set Interface */
 void bag2set(struct DynArr *da);
 
 #endif
